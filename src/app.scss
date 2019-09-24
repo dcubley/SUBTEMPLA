@@ -1,17 +1,58 @@
 @import 'colours';
 @import 'header';
 
+		img.bg {
+			/* Set rules to fill background */
+			min-height: 100%;
+			min-width: 1024px;
+			
+			/* Set up proportionate scaling */
+			width: 100%;
+			height: auto;
+			
+			/* Set up positioning */
+			position: fixed;
+			top: 0;
+			left: 0;
 
+			z-index: -1;
+		}
+		
+		@media screen and (max-width: 1024px){
+			img.bg {
+				left: 50%;
+				margin-left: -512px; }
+		}
+
+/*		
 #hero {
 
 	height: 550px;
 	width: 100%;
-	background:url('images/hero.jpg') #f0f0f0;
+	background:url('images/hero3.jpg') #f0f0f0;
+	background-size: 1000px;
 
 		h1{
 			display: flex;
 			justify-content: flex-end;
 			color: white;
+		}
+
+}
+*/
+
+#hero {
+    background-color: #D3D3D3;
+    opacity: 0.5;
+    width: 1015px;
+    margin: 0px auto;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 50px;
+    height: 500px;
+    margin-top: 50px;
+
+    		h1{
+			color: black;
 		}
 
 }
